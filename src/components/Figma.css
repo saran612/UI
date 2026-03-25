@@ -1,0 +1,140 @@
+.figma-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: #080a0c;
+    padding: 100px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.header-content {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #a259ff 0%, #0acf83 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #8a8d91;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.figma-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.figma-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 32px;
+    padding: 40px;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.figma-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(162, 89, 255, 0.3);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(162, 89, 255, 0.1);
+}
+
+.card-icon {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 15px rgba(162, 89, 255, 0.3));
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.card-desc {
+    font-size: 1.1rem;
+    color: #8a8d91;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.learn-more {
+    font-weight: 600;
+    color: #a259ff;
+    transition: color 0.3s ease;
+}
+
+.figma-card:hover .learn-more {
+    color: #fff;
+}
+
+.bg-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.1;
+}
+
+.blob-1 {
+    top: -100px;
+    right: -100px;
+    background: #a259ff;
+}
+
+.blob-2 {
+    bottom: -100px;
+    left: -100px;
+    background: #0acf83;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .figma-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,7 +1,9 @@
 import { ShaderGradientCanvas, ShaderGradient } from '@shadergradient/react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Features from './components/Features'
+import Figma from './components/Figma'
+import Playlist from './components/Playlist'
+import Registration from './components/Registration'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -32,7 +34,8 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Features />
+        <Figma />
+        <Playlist />
       </main>
       <Footer />
     </div>
